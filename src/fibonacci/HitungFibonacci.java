@@ -5,8 +5,8 @@
  */
 package fibonacci;
 
-/**
- *
+import java.util.Scanner;
+ /*
  * @author Anatasya
  */
 public class HitungFibonacci {
@@ -21,5 +21,15 @@ public class HitungFibonacci {
         String identitas = "Anatasya Galuh Risamita Dewi Salsadila / X RPL 2 / 05";
         
         tampilJudul(identitas);
+        int n = tampilInput();
     }
+    private static int tampilInput(){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        
+        return n;
+    }
+    
 }
