@@ -17,6 +17,11 @@ public class tugas1 {
         System.out.println("Kelas : X RPL 2");
         System.out.println("----------------------------------------------");
         
+         int[] nominal = {5000, 2000, 1000, 500, 100};
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Jumlah uang : ");
+        int uang = scan.nextInt();
+        
     
 }
 }
