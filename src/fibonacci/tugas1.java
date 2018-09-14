@@ -22,6 +22,14 @@ public class tugas1 {
         System.out.print("Jumlah uang : ");
         int uang = scan.nextInt();
         
+        for(int i = 0; i < 5; i++)
+        {
+            int jumlah = uang / nominal[i];
+            uang = uang - (nominal[i]*jumlah);
+            
+            System.out.println("Lembar " + nominal[i] + " : " + jumlah);
+                    
+        }
     
 }
 }
