@@ -24,6 +24,16 @@ public class tugas2 {
         int total = scan.nextInt();
         int bayar = 0;
         
+        for(int i = 0; i < berat.length; i++)
+        {
+            int jumlah = total / berat[i];
+            total = total - (berat[i]*jumlah);
+            bayar += jumlah * bayaran[i];
+            System.out.println("Jumlah " + berat[i] + " : " + jumlah );
+         }
+        
+        System.out.println("Bayaran yang didapat : " + bayar);
+
     } 
 }
 
